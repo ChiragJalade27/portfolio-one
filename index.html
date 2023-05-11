@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />            
+            
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-nav="false">
+    <main>
+        <h1>Daphne</h1>
+        <h2>Eurydice</h2>
+    </main>
+
+    <button id="nav-toggle" type="button" onclick="toggleNav()">
+        <i class='open fa-solid fa-bars-staggered'></i>
+        <i class='close fa-solid fa-xmark'></i>
+    </button>
+
+    <nav>
+        <div id="nav-links">
+            <a href="#" class="nav-link">
+                <h2 class="nav-link-label rubik-font">Home</h2>
+                <img src="https://images.pexels.com/photos/1148955/pexels-photo-1148955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="350px" alt="" class="nav-link-image">
+            </a>
+            <a href="#" class="nav-link">
+                <h2 class="nav-link-label rubik-font">Work</h2>
+                <img src="https://images.pexels.com/photos/5103517/pexels-photo-5103517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="350px" alt="" class="nav-link-image">
+            </a>
+            <a href="#" class="nav-link">
+                <h2 class="nav-link-label rubik-font">About</h2>
+                <img src="https://images.pexels.com/photos/3689899/pexels-photo-3689899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="350px" alt="" class="nav-link-image">
+            </a>
+            <a href="#" class="nav-link">
+                <h2 class="nav-link-label rubik-font">Contact</h2>
+                <img src="https://images.pexels.com/photos/16526716/pexels-photo-16526716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="350px" alt="" class="nav-link-image">
+            </a>
+            <a href="#" class="nav-link">
+                <h2 class="nav-link-label rubik-font">Join Us</h2>
+                <img src="https://images.pexels.com/photos/10329045/pexels-photo-10329045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="350px" alt="" class="nav-link-image">
+            </a>
+           
+           
+           
+           
+        </div>
+        
+    </nav>
+
+    <script>
+        const toggleNav = () => {
+            document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true";
+        }
+        
+    </script>
+</body>
+</html>
